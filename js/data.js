@@ -4,7 +4,7 @@ let historicalEvents = [];
 // Function to load events from JSON file
 async function loadEvents() {
     try {
-        const response = await fetch('/data/events.json');
+        const response = await fetch('./data/events.json');
         const data = await response.json();
         historicalEvents = data.events;
         
