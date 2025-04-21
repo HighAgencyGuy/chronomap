@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoMap - Explore History</title>
+    <!-- Load CSS files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            transition: opacity 0.3s;
+        }
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 300px;
+            background: white;
+            z-index: 1000;
+            padding: 1rem;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            transform: translateX(0);
+            transition: transform 0.3s ease;
+        }
+        .sidebar.collapsed {
+            transform: translateX(-100%);
+        }
+        .toggle-sidebar {
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-sidebar" id="toggleSidebar">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <h2><i class="fas fa-filter"></i> Filters</h2>
+        <div class="category-filters">
+            <h3>Categories</h3>
+            <div class="filter-group">
+                <label><input type="checkbox" value="War" checked> <i class="fas fa-fighter-jet"></i> War</label>
+                <label><input type="checkbox" value="Culture" checked> <i class="fas fa-landmark"></i> Culture</label>
+                <label><input type="checkbox" value="Science" checked> <i class="fas fa-flask"></i> Science</label>
+                <label><input type="checkbox" value="Religion" checked> <i class="fas fa-pray"></i> Religion</label>
+                <label><input type="checkbox" value="Politics" checked> <i class="fas fa-balance-scale"></i> Politics</label>
+            </div>
+        </div>
+        <button id="surpriseMe" class="surprise-button">
+            <i class="fas fa-dice"></i> Surprise Me!
+        </button>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    <div id="map" class="map-container"></div>
+
+    <div class="year-input">
+        <input type="text" id="yearInput" placeholder="Enter year (e.g., 1789)">
+        <button id="goToYear">
+            <i class="fas fa-clock"></i> Go
+        </button>
+    </div>
+
+    <div class="controls-container">
+        <div class="year-controls">
+            <div class="timeline-container">
+                <div id="timeline"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load JavaScript libraries -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+    
+    <!-- Load application scripts in correct order -->
+    <script src="js/slider.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/funfacts.js"></script>
+
+    <script>
+        // Ensure map is properly sized
+        document.addEventListener('DOMContentLoaded', () => {
+            const mapContainer = document.getElementById('map');
+            if (mapContainer) {
+                mapContainer.style.height = '100vh';
+                mapContainer.style.width = '100vw';
+            }
+        });
+    </script>
+</body>
+</html> 

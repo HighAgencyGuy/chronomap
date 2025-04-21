@@ -1,0 +1,180 @@
+{
+  "events": [
+    {
+      "title": "Fall of the Berlin Wall",
+      "year": 1989,
+      "location": { "lat": 52.5163, "lng": 13.3777 },
+      "category": "Politics",
+      "description": "The Berlin Wall was brought down, marking the end of the Cold War and the division between East and West Germany.",
+      "link": "https://en.wikipedia.org/wiki/Berlin_Wall"
+    },
+    {
+      "title": "Construction of the Great Pyramid of Giza",
+      "year": -2560,
+      "location": { "lat": 29.9792, "lng": 31.1342 },
+      "category": "Culture",
+      "description": "The Great Pyramid was built as a tomb for the Pharaoh Khufu of the Fourth Dynasty of ancient Egypt.",
+      "link": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    },
+    {
+      "title": "Ghana Independence",
+      "year": 1957,
+      "location": { "lat": 5.5600, "lng": -0.2057 },
+      "category": "Politics",
+      "description": "Ghana becomes the first sub-Saharan African country to gain independence from European colonization, under the leadership of Kwame Nkrumah.",
+      "link": "https://en.wikipedia.org/wiki/Ghana_Independence_Act_1957"
+    },
+    {
+      "title": "Nigerian Independence",
+      "year": 1960,
+      "location": { "lat": 9.0820, "lng": 8.6753 },
+      "category": "Politics",
+      "description": "Nigeria gains independence from British rule, becoming Africa's most populous independent nation.",
+      "link": "https://en.wikipedia.org/wiki/Independence_Day_(Nigeria)"
+    },
+    {
+      "title": "Nigerian Civil War (Biafran War)",
+      "year": 1967,
+      "location": { "lat": 6.5244, "lng": 7.3792 },
+      "category": "War",
+      "description": "The Nigerian Civil War begins as Biafra attempts to establish an independent republic, leading to a devastating conflict lasting until 1970.",
+      "link": "https://en.wikipedia.org/wiki/Nigerian_Civil_War"
+    },
+    {
+      "title": "Algerian Independence",
+      "year": 1962,
+      "location": { "lat": 36.7538, "lng": 3.0588 },
+      "category": "Politics",
+      "description": "Algeria gains independence from France after a brutal eight-year war of independence.",
+      "link": "https://en.wikipedia.org/wiki/Algerian_War"
+    },
+    {
+      "title": "Rwandan Genocide",
+      "year": 1994,
+      "location": { "lat": -1.9403, "lng": 29.8739 },
+      "category": "War",
+      "description": "Genocide against the Tutsi people in Rwanda results in an estimated 800,000 deaths over a 100-day period.",
+      "link": "https://en.wikipedia.org/wiki/Rwandan_genocide"
+    },
+    {
+      "title": "South African Apartheid Ends",
+      "year": 1994,
+      "location": { "lat": -33.9249, "lng": 18.4241 },
+      "category": "Politics",
+      "description": "Apartheid ends in South Africa with the election of Nelson Mandela as the country's first Black president.",
+      "link": "https://en.wikipedia.org/wiki/Apartheid"
+    },
+    {
+      "title": "Congo Independence",
+      "year": 1960,
+      "location": { "lat": -4.4419, "lng": 15.2663 },
+      "category": "Politics",
+      "description": "The Democratic Republic of the Congo gains independence from Belgium, followed by political crisis and civil conflict.",
+      "link": "https://en.wikipedia.org/wiki/Congo_Crisis"
+    },
+    {
+      "title": "Kenyan Independence",
+      "year": 1963,
+      "location": { "lat": -1.2921, "lng": 36.8219 },
+      "category": "Politics",
+      "description": "Kenya gains independence from British colonial rule, with Jomo Kenyatta becoming the first president.",
+      "link": "https://en.wikipedia.org/wiki/History_of_Kenya"
+    },
+    {
+      "title": "Ethiopian Revolution",
+      "year": 1974,
+      "location": { "lat": 9.1450, "lng": 40.4897 },
+      "category": "Politics",
+      "description": "Emperor Haile Selassie is overthrown, ending one of the world's oldest monarchies and leading to a period of communist rule.",
+      "link": "https://en.wikipedia.org/wiki/Ethiopian_Revolution"
+    },
+    {
+      "title": "Libyan Independence",
+      "year": 1951,
+      "location": { "lat": 32.8872, "lng": 13.1913 },
+      "category": "Politics",
+      "description": "Libya gains independence from Italy, becoming one of the first African nations to achieve independence after World War II.",
+      "link": "https://en.wikipedia.org/wiki/History_of_Libya"
+    },
+    {
+      "title": "First Liberian Civil War",
+      "year": 1989,
+      "location": { "lat": 6.3004, "lng": -10.7969 },
+      "category": "War",
+      "description": "Civil war breaks out in Liberia, lasting until 1997 and resulting in the deaths of over 200,000 people.",
+      "link": "https://en.wikipedia.org/wiki/First_Liberian_Civil_War"
+    },
+    {
+      "title": "Angolan Independence",
+      "year": 1975,
+      "location": { "lat": -8.8147, "lng": 13.2302 },
+      "category": "Politics",
+      "description": "Angola gains independence from Portugal, followed by a prolonged civil war lasting until 2002.",
+      "link": "https://en.wikipedia.org/wiki/Angolan_War_of_Independence"
+    },
+    {
+      "title": "Great African War Begins",
+      "year": 1998,
+      "location": { "lat": -4.0383, "lng": 21.7587 },
+      "category": "War",
+      "description": "The Second Congo War begins, involving nine African countries and resulting in over 5.4 million deaths by 2008.",
+      "link": "https://en.wikipedia.org/wiki/Second_Congo_War"
+    },
+    {
+      "title": "Formation of the African Union",
+      "year": 2002,
+      "location": { "lat": 9.0084, "lng": 38.7648 },
+      "category": "Politics",
+      "description": "The African Union is established in Addis Ababa, Ethiopia, replacing the Organization of African Unity.",
+      "link": "https://en.wikipedia.org/wiki/African_Union"
+    },
+    {
+      "title": "First Olympic Games",
+      "year": -776,
+      "location": { "lat": 37.6382, "lng": 21.6300 },
+      "category": "Culture",
+      "description": "The first recorded Olympic Games were held in Olympia, Greece.",
+      "link": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
+    },
+    {
+      "title": "Invention of the Printing Press",
+      "year": 1440,
+      "location": { "lat": 49.9929, "lng": 8.2473 },
+      "category": "Science",
+      "description": "Johannes Gutenberg invents the movable-type printing press in Mainz, Germany, revolutionizing the spread of information.",
+      "link": "https://en.wikipedia.org/wiki/Printing_press"
+    },
+    {
+      "title": "Discovery of King Tutankhamun's Tomb",
+      "year": 1922,
+      "location": { "lat": 25.7402, "lng": 32.6014 },
+      "category": "Culture",
+      "description": "Howard Carter discovers the nearly intact tomb of Tutankhamun in Egypt's Valley of the Kings.",
+      "link": "https://en.wikipedia.org/wiki/Tutankhamun"
+    },
+    {
+      "title": "The Black Death Begins",
+      "year": 1347,
+      "location": { "lat": 45.4408, "lng": 12.3155 },
+      "category": "Science",
+      "description": "The Black Death arrives in Venice, marking the start of a devastating pandemic in Europe.",
+      "link": "https://en.wikipedia.org/wiki/Black_Death"
+    },
+    {
+      "title": "Founding of the Mongol Empire",
+      "year": 1206,
+      "location": { "lat": 47.9188, "lng": 106.9177 },
+      "category": "Politics",
+      "description": "Genghis Khan unifies the Mongol tribes and establishes the largest contiguous land empire in history.",
+      "link": "https://en.wikipedia.org/wiki/Mongol_Empire"
+    },
+    {
+      "title": "The Renaissance Begins",
+      "year": 1400,
+      "location": { "lat": 43.7696, "lng": 11.2558 },
+      "category": "Culture",
+      "description": "The Renaissance period begins in Florence, Italy, marking a rebirth of art, science, and classical learning.",
+      "link": "https://en.wikipedia.org/wiki/Renaissance"
+    }
+  ]
+} 

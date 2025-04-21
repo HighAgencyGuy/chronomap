@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ChronoMap</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="about-page">
+    <div class="about-container">
+        <header class="about-header">
+            <h1 class="logo">
+                <i class="fas fa-globe-americas"></i>
+                ChronoMap
+            </h1>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="map.html"><i class="fas fa-map-marked-alt"></i> Time Machine</a>
+            </nav>
+        </header>
+
+        <main class="about-content">
+            <section class="project-summary animate-section">
+                <div class="section-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h2>About the Project</h2>
+                <p>ChronoMap is an interactive historical exploration tool that allows you to travel through time and space, discovering significant events that shaped our world. From ancient civilizations to modern achievements, explore history in a unique and engaging way.</p>
+            </section>
+
+            <section class="data-sources animate-section">
+                <div class="section-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h2>Data Sources</h2>
+                <p>Our historical data is carefully curated from reliable sources including:</p>
+                <ul>
+                    <li><i class="fab fa-wikipedia-w"></i> Wikipedia</li>
+                    <li><i class="fas fa-project-diagram"></i> DBpedia</li>
+                    <li><i class="fas fa-university"></i> Academic historical databases</li>
+                    <li><i class="fas fa-check-circle"></i> Verified historical records</li>
+                </ul>
+            </section>
+
+            <section class="technology animate-section">
+                <div class="section-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li><i class="fas fa-map"></i> Mapping: Leaflet.js with OpenStreetMap</li>
+                    <li><i class="fas fa-sliders-h"></i> Timeline: noUiSlider</li>
+                    <li><i class="fas fa-laptop-code"></i> Frontend: HTML5, CSS3, JavaScript</li>
+                </ul>
+            </section>
+
+            <section class="contribute animate-section">
+                <div class="section-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h2>Contribute</h2>
+                <p>Help us expand our historical database! If you'd like to submit a historical event, please ensure you include:</p>
+                <ul>
+                    <li><i class="fas fa-heading"></i> Event title and date</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Precise location (latitude/longitude)</li>
+                    <li><i class="fas fa-tags"></i> Category and description</li>
+                    <li><i class="fas fa-link"></i> Reliable source links</li>
+                </ul>
+                <a href="mailto:contribute@chronomap.com" class="cta-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit an Event
+                </a>
+            </section>
+        </main>
+
+        <footer class="about-footer">
+            <p>© 2024 ChronoMap. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> for history enthusiasts</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html> 
